@@ -1,117 +1,63 @@
-main {
+body {
+    height: 100%;
+    width: 80%;
+    min-width: 320px;
+    margin: auto;
+    padding: 0px;
+}
+
+/*main {
+    margin: auto;
     position: relative;
     width: 1920px;
     height: 4895px;
     padding: 0;
     background: #F9F9F9;
 }
+*/
 .first-screen {
-    position: absolute;
-    width: 1920px;
-    height: 700px;
-    left: 0px;
-    top: -7px;
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    padding-top: 70px;
     background: #EEEFF1;
 
 }
-
+.header {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
 .computer {
-    position: absolute;
     width: 357px;
     height: 233.7px;
-    left: 487px;
-    top: 271px;
+    margin-top: 75px;
 
 }
-.first-screen_logo {
-    position: absolute;
-    width: 96px;
-    height: 60px;
-    left: 402px;
-    top: 50px;
 
-    font-family: 'Revalia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    /* identical to box height */
-
-    text-align: center;
-
-    color: #34547A;
-
+.first_screen_content {
+    margin-left: 130px;
+    height: 100% + 100px;
+}
+.first_screen_box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    justify-content: center;
 }
 .first-screen_menu {
-
+    display: flex;
     width: 611px;
+    min-width: 300px;
     height: 16px;
-    left: 896px;
-    top: 72px;
+    justify-content: space-between;
 
 }
-.menu_elem1 {
-    position: absolute;
-    width: 84px;
-    height: 12px;
-    left: 896px;
-    top: 72px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.1em;
 
-    /* Accent */
-
-    color: #34547A;
-
-}
-.menu_elem2 {
-    position: absolute;
-    width: 100px;
+.menu_elem {
     height: 16px;
-    left: 1022px;
-    top: 72px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.1em;
-
-    color: #000000;
-
-
-}
-.menu_elem3 {
-    position: absolute;
-    width: 74px;
-    height: 16px;
-    left: 1164px;
-    top: 72px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.1em;
-
-    color: #000000;
-
-
-}
-.menu_elem4 {
-    position: absolute;
-    width: 86px;
-    height: 16px;
-    left: 1280px;
-    top: 72px;
-    
+   
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -119,32 +65,13 @@ main {
     line-height: 26px;
     letter-spacing: 0.1em;
     
-    color: #000000;}
-.menu_elem5 {
-    position: absolute;
-    width: 99px;
-    height: 16px;
-    left: 1408px;
-    top: 72px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.1em;
-
     color: #000000;
-
-
 }
 
 .first-screen_title {
-    position: absolute;
+    margin-bottom: 60px;
     width: 541px;
     height: 45px;
-    left: 974px;
-    top: 250px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -158,11 +85,10 @@ main {
 }
 
 .first-screen_text {
-    position: absolute;
+    margin-bottom: 60px;
     width: 540px;
     height: 67px;
-    left: 975px;
-    top: 355px;
+
 
     /* p */
 
@@ -180,8 +106,6 @@ main {
 
     width: 143px;
     height: 15px;
-    left: 1016px;
-    top: 507px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -193,20 +117,17 @@ main {
 }
 
 .first-screen__button{
-    position: absolute;
     width: 225px;
     height: 65px;
-    left: 975px;
-    top: 482px;
+
     background: #34547A;
 
 }
 .about-me {
-    position: absolute;
+    display: block;
     width: 540px;
     height: 147px;
-    left: 690px;
-    top: 812px;
+    margin: 100px auto;
 }
 
 .about-me_title {
@@ -214,8 +135,6 @@ main {
     margin: 0 auto;
     width: 403px;
     height: 30px;
-    left: 758px;
-    top: 812px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -228,9 +147,7 @@ main {
 
     width: 540px;
     height: 67px;
-    left: 690px;
-    top: 892px;
-
+    margin-top: 50px;
     /* p */
 
     font-family: 'Roboto';
@@ -246,11 +163,9 @@ main {
 
 
 .numbers {
-    position: absolute;
-    width: 1920px;
-    height: 250px;
-    left: 0px;
-    top: 1059px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
     background: #34547A;
     display: flex;
     justify-content: center;
@@ -260,88 +175,191 @@ main {
 .number_elem {
     width: 141px;
     height: 50px;
-    left: 1355px;
-    top: 1159px;
-    margin: auto 15px;
+    margin: 100px 15px;
     
 }
 .video {
-    position: absolute;
-    width: 1920px;
-    height: 1004px;
-    left: 0px;
-    top: 1962px;
+
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 1000px;
+    background: #EEEFF1;
 
 }
 
 .video_title {
+    width: 403px;
+    height: 30px;
+    margin: 100px auto 50px auto;
 
-    position: absolute;
+    
+    /* h2 */
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    
+    color: #000000;
+}
+.video_text {
+    margin:10px auto;
     width: 540px;
-    height: 147px;
-    left: 690px;
-    top: 2062px;
+    height: 67px;
+
+
+    /* p */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #727272;
 
 }
+.video_img {
+    margin: 55px auto 100px auto;
+    display: flex;
+    width: 90%;
+    /*background-image: url('img/Rectangle 5.png');*/
+    background-size: cover;
+}
+.video_img > img {
+    width: 100%;
+}
 
+.video_play_button{
+    margin: auto;
+    position: relative;
+}
 .skills {
-    position: absolute;
-    width: 1150px;
-    height: 450px;
-    left: 386px;
-    top: 1411px;
+    margin: 100px auto;
+    width: 100%;
+    max-width: 1150px;
+    height: 100%;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 
 }
 
-.skills >img {
-    width: 555px;
-    height: 450px;
+.skills_img {
+    width: 50%;
+    min-width: 600px;
+    height: 500px;
+    background: url("img/Rectangle 3.png");
+    background-size: cover;
 }
-
+.my_skills_elem {
+    display: flex;
+    background: #C4C4C4;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 4px;
+}
+.my_skills_elem_done {
+    display: flex;
+    background: #34547A;
+    height: 4px;
+    width: 1px;
+    flex-basis:  75%;
+}
 .my_skills {
     width: 445px;
-    height: 257px;
+    height: 100%;
     margin: auto;
     margin-left: 0px;
 }
-.form {
-    position: absolute;
-    width: 1920px;
-    height: 762px;
-    left: 0px;
-    top: 3982px;
+.my_skills_title {
+    
+    width: 403px;
+    height: 30px;
+
+
+    /* h2 */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
 }
 
+.my_skills_text {
+    width: 128px;
+    height: 15px;
+    left: 387px;
+    top: 1593px;
+
+    /* p */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #727272;
+
+}
+
+/*
 .projects {
-    position: absolute;
-    width: 1920px;
-    height: 960px;
-    left: 0px;
-    top: 2994px;
+
+    width: 100%;
+    height: 100%;
+    min-height: 960px;
+
     display: flex;
     flex-wrap: wrap;
 }
 
-.project_elem {
-    width: 480px;
-    height: 480px;
-    background: #C4C4C4;
+.projects_elem {
+    width: 25%;
+    height: auto;
+    min-width: 400px;
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));    
 }
-.project_elem > img {
+
+.project_shadow{
     width: 100%;
     height: 100%;
-    object-fit: cover;	
+    size: cover;
+
+}
+
+.project_shadow:hover {
+    opacity: 0.2;
+    background: url('img/view.svg') no-repeat center;
 }
 
 
+<div class="projects">
+            <div class="projects_elem"><img src='img/Rectangle 7.7.png' class="project_shadow"></div>
+            <div class="projects_elem"><img src='img/Rectangle 7.png' class="project_shadow"></div>
+            <div class="projects_elem"><img src='img/Rectangle 7.7.png' class="project_shadow"></div>
+            <div class="projects_elem"><img src='img/Rectangle 7.png' class="project_shadow"></div>
+            <div class="projects_elem"><img src='img/Rectangle 7.png' class="project_shadow"></div>
+            <div class="projects_elem"><img src='img/Rectangle 7.7.png' class="project_shadow"></div>
+            <div class="projects_elem"><img src='img/Rectangle 7.png' class="project_shadow"></div>
+            <div class="projects_elem"><img src='img/Rectangle 7.7.png' class="project_shadow"></div>
+        </div>
+
+*/
 .form {
-    position: absolute;
-    width: 1920px;
+    display: block;
+    width: 100%;
     height: 762px;
-    left: 0px;
-    top: 3982px;
+
 
 }
 
@@ -366,7 +384,7 @@ main {
 }
 
 .form_text {
-    margin: 50px auto 0px auto;
+    margin: 50px auto 65px auto;
 
     width: 540px;
     height: 67px;
@@ -385,13 +403,198 @@ main {
 
 
 }
+.form_block{
+    display: flex;
+    width: 540px;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
 
+}
+.input_text {
+    width: 45%;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    color: #5F5D5D;
+}
+
+.input_text2 {
+    width: 100%;
+    min-width: 342px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    min-height: 175px;
+    color: #5F5D5D;
+}
+
+
+.block_text {
+    width: 74px;
+    height: 15px;
+    left: 710px;
+    top: 4311px;
+
+    /* inputs */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+
+    color: #5F5D5D;
+
+}
 .main-footer {
-    position: absolute;
-    width: 1920px;
-    height: 151px;
-    left: 0px;
-    top: 4744px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 151px;
+
     background: #34547A;
 }
 
+
+.footer_text {
+    margin: auto 0px;
+}
+.footer_name {
+    
+    width: 130px;
+    height: 19px;
+    left: 406px;
+    top: 4794px;
+            
+            /* h3 */
+            
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+            
+    color: #FFFFFF;  
+}
+
+.footer_text_content {
+    width: 193px;
+    height: 12px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.vk_logo {
+    margin: auto 0px;
+}
+
+
+
+
+.projects {
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project_elem1 {
+    min-height: 400px;
+    width: 25%;
+    height: 50%;
+    min-width: 400px;
+    background: url('img/Rectangle 7.7.png');
+    background-size: cover;
+    
+}
+.project_elem2 {
+    min-height: 400px;
+    min-width: 400px;
+    width: 25%;
+    height: 50%;
+    background: url('img/Rectangle 7.png');
+    background-size: cover;
+}
+.elem_shadow{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.elem_shadow:hover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('img/view.svg') no-repeat center;
+    background-color: #40a4c2;
+    opacity: 0.7;
+    /*background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), url('img/view.svg') no-repeat center;*/
+}
+
+/*
+.projects {
+
+    width: 1920px;
+    height: 960px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project_elem1 {
+    width: 480px;
+    height: 480px;
+    background: url('img/Rectangle 7.7.png');
+    
+}
+.project_elem2 {
+    width: 480px;
+    height: 480px;
+    background: url('img/Rectangle 7.png');
+    
+}
+.elem_shadow{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.elem_shadow:hover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('img/view.svg') no-repeat center;
+    background-color: #40a4c2;
+    opacity: 0.7;
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), url('img/view.svg') no-repeat center;
+}
+
+        <div class="projects">
+            <div class="project_elem1"><div class="elem_shadow"></div></div>
+            <div class="project_elem2"><div class="elem_shadow"></div></div>
+            <div class="project_elem1"><div class="elem_shadow"></div></div>
+            <div class="project_elem2"><div class="elem_shadow"></div></div>
+            <div class="project_elem2"><div class="elem_shadow"></div></div>
+            <div class="project_elem1"><div class="elem_shadow"></div></div>
+            <div class="project_elem2"><div class="elem_shadow"></div></div>
+            <div class="project_elem1"><div class="elem_shadow"></div></div>
+        </div>
+
+*/
