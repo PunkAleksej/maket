@@ -14,9 +14,9 @@ html, body {
 */
 .first-screen {
     width: 100%;
+    padding: 50px 0px 95px 0px;
     height: 100%;
     min-height: 650px;
-    padding-top: 70px;
     background: #EEEFF1;
 
 }
@@ -118,10 +118,11 @@ html, body {
 .first-screen__button{
     width: 225px;
     height: 65px;
-
+    border: 0px;
     background: #34547A;
 
 }
+
 .about-me {
     display: block;
     width: 540px;
@@ -162,22 +163,20 @@ html, body {
 
 
 .numbers {
-    flex-wrap: wrap;
-    gap: 1rem
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
+    padding: 75px 200px 75px 200px;
+    box-sizing: border-box;
     background: #34547A;
-    display: flex;
-    justify-content: center;
-
 }
 
 .number_elem {
-    width: 141px;
-    height: 50px;
-    margin: 100px 15px;
     display: flex;
-    
+}
+.number_elem2 {
+    display: flex;
 }
 
 p {
@@ -186,9 +185,10 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    margin: 0px 20px;
     color: #FFFFFF;
+    margin-left: 20px;
 }
+
 .video {
 
     justify-content: space-around;
@@ -201,7 +201,7 @@ p {
 }
 
 .video_title {
-    width: 403px;
+    width: 100%;
     height: 30px;
     margin: 100px auto 50px auto;
 
@@ -220,7 +220,6 @@ p {
 .video_text {
     margin:10px auto;
     width: 540px;
-    height: 67px;
 
 
     /* p */
@@ -266,7 +265,7 @@ p {
 .skills_img {
     width: 50%;
     min-width: 600px;
-    height: 500px;
+    min-height: 480px;
     background: url("img/Rectangle 3.png");
     background-size: cover;
 }
@@ -372,7 +371,8 @@ p {
     display: block;
     width: 100%;
     height: 762px;
-
+    border-width: 2px;
+    background: #EEEFF1;;
 
 }
 
@@ -416,16 +416,28 @@ p {
 
 
 }
+
+
+.form_button{
+    width: 225px;
+    height: 65px;
+    margin: 0px auto;
+    border: 0px;
+    display: block;
+    background: #34547A;
+
+}
 .form_block{
     display: flex;
     width: 540px;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 0px auto 50px auto;
     justify-content: space-between;
 
 }
 .input_text {
     width: 45%;
+    border-width: 0px;
     height: 50px;
     font-family: 'Roboto';
     font-style: normal;
@@ -434,12 +446,15 @@ p {
     line-height: 23px;
     margin-bottom: 20px;
     color: #5F5D5D;
+    background: #FFFFFF;
 }
 
 .input_text2 {
     width: 100%;
     min-width: 342px;
     height: 50px;
+    border-width: 0px;
+    padding: 0px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -447,6 +462,7 @@ p {
     line-height: 23px;
     min-height: 175px;
     color: #5F5D5D;
+    background: #FFFFFF;
 }
 
 
@@ -517,27 +533,25 @@ p {
     margin: auto 0px;
 }
 
+.vk_logo >img {
+    width: 44px;
+    margin: 0px 10px;
+}
 
 
 
 .projects {
-    margin: 0px auto;
+    display: grid;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-items: stretch;
+    grid-template-columns: repeat(4,1fr);
 }
 
 .project_elem1 {
-    height: 480px;
-    width: 480px;
     background: url('img/Rectangle 7.7.png');
     background-size: cover;
 }
 .project_elem2 {
-    height: 480px;
-    width: 480px;
     background: url('img/Rectangle 7.png');
     background-size: cover;
 }
@@ -557,6 +571,13 @@ p {
 }
 
 @media only screen and (max-device-width: 1280px){
+    .first-screen {
+        padding-top: 0px;
+    }
+    .header {
+        justify-content: start;
+        padding: 20px;
+    }
     .first-screen_menu {
         display: none;
     }
@@ -564,14 +585,17 @@ p {
     .computer {
         width: 298px;
         height: 195px;
-        margin-top: 75px;
+        margin-top: 0px;
         background: url('img/iPhone/Frame.svg');
+
+    }
+    .first_screen_box {
 
     }
     .first-screen_text {
         margin-bottom: 60px;
-        width: 323px;
-        height: 98px;
+        width: 90%;
+
         text-align: center;
         font-family: 'Roboto';
         font-style: normal;
@@ -583,8 +607,7 @@ p {
 
     .first-screen_title {
         margin: 60px auto;
-        width: 302px;
-        height: 41px;
+        width: 90%;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -602,8 +625,7 @@ p {
         margin: 10px auto;
     }
     .about-me_title {
-        width: 126.39px;
-        height: 38px;
+        width: 100%;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -614,15 +636,12 @@ p {
 
     .about-me {
         display: block;
-        width: 320px;
-        height: 147px;
+        width: 100%;
     }
 
     .about-me_text {
-
-        width: 320px;
-        height: 67px;
-        margin: 50px 0px 0px 0px;
+        width: 90%;
+        margin: 50px 20px;
 
     
         font-family: 'Roboto';
@@ -632,20 +651,38 @@ p {
         line-height: 26px;
         text-align: center;
     }
-    .number_elem {
-        width: 141px;
-        height: 50px;
-        margin: 50px 0px;
-        display: flex;
-    }
-    .my_skills {
-        width: 320px;
+    .numbers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
         height: 100%;
+        padding: 75px 20px;
+        box-sizing: border-box;
+        background: #34547A;
+        justify-content: space-between;
+        column-gap:  auto;
+    }
+    
+    .number_elem {
+        display: flex;
+        max-width: 140px;
+        box-sizing: border-box;
+        justify-self: center;
+    }
+    .number_elem2 {
+        display: flex;
+        max-width: 140px;
+        box-sizing: border-box;
+        justify-self: center;
+    }
+    
+    .my_skills {
+        width: 100%;
         margin: 0px auto;
     }
     .my_skills_title {
-        width: 189px;
-        height: 38px;
+        width: 100%;
+
         margin: auto;
         font-family: 'Roboto';
         font-style: normal;
@@ -655,28 +692,33 @@ p {
         text-align: center;
         color: #000000;
     }
+    
     .skills_img {
         width: 50%;
-        min-width: 320px;
-        height: 260px;
+        min-width: 260px;
+        min-height: 200px;
         margin: 0px auto 50px auto;
-        background: url("img/Rectangle 3.png");
+        background: url("img/Rectangle 3.png") no-repeat;
         background-size: cover;
+        box-sizing: border-box;
+ 
     }
     .skills {
+        padding: 20px;
+        box-sizing: border-box;
         flex-wrap: wrap-reverse;
     }
+
     .video {
         min-height: 0px;
     }
     .video_title {
-        width: 220.68px;
-        height: 38px;
+        width: 100%;
         margin: 30px auto;
      
     }
     .video_text{
-        width: 323px;
+        width: 100%;
         margin: 0px auto 30px auto;
         height: 98px;
         font-size: 16px;
@@ -691,17 +733,23 @@ p {
         width: 75px;
         height: 75px;
     }
+
+    .projects {
+        display: grid;
+        width: 100%;
+        justify-items: stretch;
+        grid-template-columns: repeat(4,1fr);
+    }
     .project_elem1 {
-        width: 160px;
-        height: 160px;
+        min-width: 25%;
+        min-height: 50%;
     }
     .project_elem2{
-        width: 160px;
-        height: 160px;
+        min-width: 25%;
+        min-height: calc(width * 1);
     }
     .form_title {
-        width: 260px;
-        height: 38px;
+        width: 100%;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -709,21 +757,20 @@ p {
         line-height: 38px;
     }
     .form_text{
-        width: 322px;
-        height: 98px;
+        width: 100%;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 120%;
-        margin: 20px auto;
+        margin: 30px auto;
     }
     .input_text {
-        width: 320px;
+        width: 100%;
         height: 50px;
     }
     .input_text2 {
-        width: 320px;
+        width: 100%;
         height: 175px;
         min-width: 320px;
         margin-bottom: 50px;
