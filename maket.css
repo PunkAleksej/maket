@@ -21,7 +21,7 @@ html, body {
 
 }
 .header {
-    justify-content: space-around;
+    justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
 }
@@ -243,10 +243,7 @@ p {
     width: 1110px;
     height: 600px;
 }
-.video_img > img {
-    width: 100px;
 
-}
 
 .video_play_button{
     margin: auto;
@@ -264,10 +261,10 @@ p {
 
 .skills_img {
     width: 50%;
-    min-width: 600px;
-    min-height: 480px;
-    background: url("img/Rectangle 3.png");
-    background-size: cover;
+}
+.skills_img > img{
+    width: 100%;
+    
 }
 .my_skills_elem {
     display: flex;
@@ -692,16 +689,12 @@ p {
         text-align: center;
         color: #000000;
     }
-    
     .skills_img {
-        width: 50%;
-        min-width: 260px;
-        min-height: 200px;
-        margin: 0px auto 50px auto;
-        background: url("img/Rectangle 3.png") no-repeat;
-        background-size: cover;
-        box-sizing: border-box;
- 
+        width: 90%;
+        margin: 0px auto;
+    }
+    .skills_img > img {
+        width: 100%;
     }
     .skills {
         padding: 20px;
@@ -718,7 +711,7 @@ p {
      
     }
     .video_text{
-        width: 100%;
+        width: 90%;
         margin: 0px auto 30px auto;
         height: 98px;
         font-size: 16px;
@@ -757,7 +750,7 @@ p {
         line-height: 38px;
     }
     .form_text{
-        width: 100%;
+        width: 90%;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;

@@ -1,0 +1,35 @@
+body {
+	margin: 0px;
+}
+
+.foto {
+ display: flex;
+ flex-wrap: wrap;
+ 
+}
+.foto_card{
+	width: 25%;
+	height: 50%;
+}
+.foto_card:hover {
+	opacity: 0.5;
+}
+
+.foto_card > img {
+	width: 100%;
+	height: 100%;
+}
+.foto_card > img:hover {
+	background:  url('img/view.svg') center no-repeat;
+	opacity: 0.1;
+}
+
+.view {
+	margin: auto;
+}
+@media only screen and (max-device-width: 1280px){
+	.foto_card{
+		width: 50%;
+		height: 25%;
+	}
+}
