@@ -1,9 +1,6 @@
-body {
-    height: 100%;
-    width: 80%;
-    min-width: 320px;
-    margin: auto;
-    padding: 0px;
+html, body {
+ margin: 0;
+ padding: 0;
 }
 
 /*main {
@@ -32,6 +29,7 @@ body {
     width: 357px;
     height: 233.7px;
     margin-top: 75px;
+    background: url('img/Frame.svg');
 
 }
 
@@ -51,9 +49,12 @@ body {
     min-width: 300px;
     height: 16px;
     justify-content: space-between;
-
 }
 
+
+
+
+}
 
 .menu_elem {
     height: 16px;
@@ -80,8 +81,6 @@ body {
     line-height: 79px;
 
     color: #000000;
-
-
 }
 
 .first-screen_text {
@@ -164,6 +163,7 @@ body {
 
 .numbers {
     flex-wrap: wrap;
+    gap: 1rem
     width: 100%;
     height: 100%;
     background: #34547A;
@@ -176,7 +176,18 @@ body {
     width: 141px;
     height: 50px;
     margin: 100px 15px;
+    display: flex;
     
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0px 20px;
+    color: #FFFFFF;
 }
 .video {
 
@@ -227,12 +238,15 @@ body {
 .video_img {
     margin: 55px auto 100px auto;
     display: flex;
-    width: 90%;
-    /*background-image: url('img/Rectangle 5.png');*/
+    /* width: 90%; */
+    background-image: url('img/Rectangle 5.png');
     background-size: cover;
+    width: 1110px;
+    height: 600px;
 }
 .video_img > img {
-    width: 100%;
+    width: 100px;
+
 }
 
 .video_play_button{
@@ -247,7 +261,6 @@ body {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-
 }
 
 .skills_img {
@@ -513,41 +526,218 @@ body {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project_elem1 {
-    min-height: 400px;
-    width: 25%;
-    height: 50%;
-    min-width: 400px;
+    height: 480px;
+    width: 480px;
     background: url('img/Rectangle 7.7.png');
     background-size: cover;
-    
 }
 .project_elem2 {
-    min-height: 400px;
-    min-width: 400px;
-    width: 25%;
-    height: 50%;
+    height: 480px;
+    width: 480px;
     background: url('img/Rectangle 7.png');
     background-size: cover;
 }
 .elem_shadow{
-    display: block;
     width: 100%;
     height: 100%;
 }
 
 .elem_shadow:hover {
-    display: block;
     width: 100%;
+    display: block;
     height: 100%;
     background: url('img/view.svg') no-repeat center;
-    background-color: #40a4c2;
+    background-color: #34547acc;
     opacity: 0.7;
     /*background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), url('img/view.svg') no-repeat center;*/
 }
 
+@media only screen and (max-device-width: 1280px){
+    .first-screen_menu {
+        display: none;
+    }
+
+    .computer {
+        width: 298px;
+        height: 195px;
+        margin-top: 75px;
+        background: url('img/iPhone/Frame.svg');
+
+    }
+    .first-screen_text {
+        margin-bottom: 60px;
+        width: 323px;
+        height: 98px;
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #727272;
+    }
+
+    .first-screen_title {
+        margin: 60px auto;
+        width: 302px;
+        height: 41px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+        text-align: center;
+        color: #000000;
+    }
+    .first_screen_content {
+        margin-left: 0px;
+        height: 100% + 100px;
+    }
+    .first-screen__button{
+        display: block;
+        margin: 10px auto;
+    }
+    .about-me_title {
+        width: 126.39px;
+        height: 38px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .about-me {
+        display: block;
+        width: 320px;
+        height: 147px;
+    }
+
+    .about-me_text {
+
+        width: 320px;
+        height: 67px;
+        margin: 50px 0px 0px 0px;
+
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .number_elem {
+        width: 141px;
+        height: 50px;
+        margin: 50px 0px;
+        display: flex;
+    }
+    .my_skills {
+        width: 320px;
+        height: 100%;
+        margin: 0px auto;
+    }
+    .my_skills_title {
+        width: 189px;
+        height: 38px;
+        margin: auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: #000000;
+    }
+    .skills_img {
+        width: 50%;
+        min-width: 320px;
+        height: 260px;
+        margin: 0px auto 50px auto;
+        background: url("img/Rectangle 3.png");
+        background-size: cover;
+    }
+    .skills {
+        flex-wrap: wrap-reverse;
+    }
+    .video {
+        min-height: 0px;
+    }
+    .video_title {
+        width: 220.68px;
+        height: 38px;
+        margin: 30px auto;
+     
+    }
+    .video_text{
+        width: 323px;
+        margin: 0px auto 30px auto;
+        height: 98px;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .video_img{
+        width: 320px;
+        height: 185px;
+    }
+    .video_play_button{
+        width: 75px;
+        height: 75px;
+    }
+    .project_elem1 {
+        width: 160px;
+        height: 160px;
+    }
+    .project_elem2{
+        width: 160px;
+        height: 160px;
+    }
+    .form_title {
+        width: 260px;
+        height: 38px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .form_text{
+        width: 322px;
+        height: 98px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        margin: 20px auto;
+    }
+    .input_text {
+        width: 320px;
+        height: 50px;
+    }
+    .input_text2 {
+        width: 320px;
+        height: 175px;
+        min-width: 320px;
+        margin-bottom: 50px;
+    }
+    .footer_name{
+        margin: 20px auto;
+    }
+    .vk_logo >img {
+        width:44px;
+    }
+    .form_block {
+        width: 320px;
+    }
+}
 /*
 .projects {
 
