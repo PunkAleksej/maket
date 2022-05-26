@@ -1,164 +1,118 @@
 html, body {
- margin: 0;
- padding: 0;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	color: #000000;
+    padding: 0px;
 }
 
-/*main {
-    margin: auto;
-    position: relative;
-    width: 1920px;
-    height: 4895px;
-    padding: 0;
-    background: #F9F9F9;
+.text {
+    font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.1em;
+	color: #727272;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
-*/
+
+.title {
+    text-align: center;
+    font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 37.5px;
+	color: #000000;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.button {
+    padding: 18px 40px;
+    background: #34547A;
+    border: 0px;
+}
+.button_text {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.1em
+}
+
+.form_button {
+    margin: 0px auto;
+}
 .first-screen {
     width: 100%;
-    padding: 50px 0px 95px 0px;
+    padding: 57px 405px 146px 402px;
     height: 100%;
-    min-height: 650px;
     background: #EEEFF1;
-
+    box-sizing: border-box;
 }
 .header {
-    justify-content: space-evenly;
+    justify-content: space-between;
     display: flex;
-    flex-wrap: wrap;
 }
 .computer {
     width: 357px;
     height: 233.7px;
-    margin-top: 75px;
     background: url('img/Frame.svg');
+    align-self: center;
+    margin-left: 85px;
 
 }
 
 .first_screen_content {
-    margin-left: 130px;
-    height: 100% + 100px;
+    width: 45%;
+    justify-content: flex-end;
 }
 .first_screen_box {
     display: flex;
-    flex-wrap: wrap;
-    margin: 100px auto;
-    justify-content: center;
+    justify-content: space-between;
 }
+
 .first-screen_menu {
     display: flex;
     width: 611px;
-    min-width: 300px;
-    height: 16px;
+    margin-top: 22px;
+    margin-bottom: 162px;
     justify-content: space-between;
 }
 
 
 
 
-}
-
-.menu_elem {
-    height: 16px;
-   
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.1em;
-    
-    color: #000000;
-}
-
 .first-screen_title {
-    margin-bottom: 60px;
-    width: 541px;
-    height: 45px;
-
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 79px;
-
+    margin: 0px;
     color: #000000;
 }
 
 .first-screen_text {
-    margin-bottom: 60px;
-    width: 540px;
-    height: 67px;
-
-
-    /* p */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-
-    color: #727272;
-
-
-}
-.first-screen__button_text {
-
-    width: 143px;
-    height: 15px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-}
-
-.first-screen__button{
-    width: 225px;
-    height: 65px;
-    border: 0px;
-    background: #34547A;
-
+    width: 100%;
+    margin: 60px 0px;
 }
 
 .about-me {
     display: block;
-    width: 540px;
-    height: 147px;
-    margin: 100px auto;
+    width: 100%;
+    padding: 119px 690px 100px 690px;
+    box-sizing: border-box;
 }
 
-.about-me_title {
 
-    margin: 0 auto;
-    width: 403px;
-    height: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-    color: #000000;
-}
-.about-me_text {
-
-    width: 540px;
-    height: 67px;
+.about-me-text {
     margin-top: 50px;
-    /* p */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-
-    color: #727272;
-
 }
 
 
@@ -167,7 +121,7 @@ html, body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
-    padding: 75px 200px 75px 200px;
+    padding: 100px 405px 100px 424px;
     box-sizing: border-box;
     background: #34547A;
 }
@@ -179,15 +133,6 @@ html, body {
     display: flex;
 }
 
-p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #FFFFFF;
-    margin-left: 20px;
-}
 
 .video {
 
@@ -250,10 +195,9 @@ p {
     position: relative;
 }
 .skills {
-    margin: 100px auto;
+    box-sizing: border-box;
+    padding: 102px 384px 101px 384px;
     width: 100%;
-    max-width: 1150px;
-    height: 100%;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
@@ -282,7 +226,6 @@ p {
 }
 .my_skills {
     width: 445px;
-    height: 100%;
     margin: auto;
     margin-left: 0px;
 }
@@ -535,37 +478,36 @@ p {
     margin: 0px 10px;
 }
 
-
-
+.shadow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background:  url('img/view.svg') center no-repeat;
+	background-color: #34547acc;
+	opacity: 0;
+}
+.shadow:hover {
+	opacity: 1;
+}
 .projects {
-    display: grid;
-    width: 100%;
-    justify-items: stretch;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.project_elem1 {
-    background: url('img/Rectangle 7.7.png');
-    background-size: cover;
-}
-.project_elem2 {
-    background: url('img/Rectangle 7.png');
-    background-size: cover;
-}
-.elem_shadow{
-    width: 100%;
-    height: 100%;
+.project_elem {
+	width: 25%;
+	height: 50%;
+	display: flex;
+	position: relative
 }
 
-.elem_shadow:hover {
-    width: 100%;
-    display: block;
-    height: 100%;
-    background: url('img/view.svg') no-repeat center;
-    background-color: #34547acc;
-    opacity: 0.7;
-    /*background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), url('img/view.svg') no-repeat center;*/
+.project_elem > img {
+	width: 100%;
+	height: 100%;
 }
+
 
 @media only screen and (max-device-width: 1280px){
     .first-screen {
@@ -727,20 +669,12 @@ p {
         height: 75px;
     }
 
-    .projects {
-        display: grid;
-        width: 100%;
-        justify-items: stretch;
-        grid-template-columns: repeat(4,1fr);
+
+    .project_elem {
+        width: 50%;
+		height: 25%;
     }
-    .project_elem1 {
-        min-width: 25%;
-        min-height: 50%;
-    }
-    .project_elem2{
-        min-width: 25%;
-        min-height: calc(width * 1);
-    }
+
     .form_title {
         width: 100%;
         font-family: 'Roboto';
