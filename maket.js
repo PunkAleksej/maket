@@ -47,4 +47,45 @@ function ageScan (str) {
     return result
 } 
 
-console.log(ageScan(sourceString))
+
+
+//Функция должна вернуть новую дату, которая будет увеличена на значение второго аргумента. Увеличится сообветсвенно на указаные еденицы (дни, месяцы, года).
+//Валидировать ничего не надо, считаем что данные всегда будут входить красивые.
+//Пример:
+//const date = new Date('2000-01-01');
+//const updateDate = (date, value, type) => { ... };
+//updateDate(date, 2, 'day'); // 2000-01-03
+//updateDate(date, 4, 'month'); // 2000-05-01
+//updateDate(date, 22, 'year'); // 2022-01-01
+const date = new Date('2000-01-01');
+
+
+
+function updateDate (date, value, type) {
+    let result = new Date(date)
+
+    if (value < 0 ) {
+        return
+    }
+    if (type === 'year') {
+        let year = result.getFullYear();
+        result.setFullYear(year + value)
+        return result
+    }
+
+    if (type === 'month') {
+        let month = result.getMonth();
+        result.setMonth(month + value)
+        return result
+    }
+    if (type === 'day') {
+        let day = result.getDate()
+        result.setDate(day + value)
+        return result
+    }
+}
+
+console.log(updateDate(date, -1, 'year'))
+console.log(updateDate(date, 100, 'year'))
+console.log(updateDate(date, 100, 'month'))
+console.log(updateDate(date, 100, 'day'))
