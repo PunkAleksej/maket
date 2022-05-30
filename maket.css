@@ -1,259 +1,214 @@
 html, body {
- margin: 0;
- padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+    letter-spacing: 0px;
+	color: #000000;
+    padding: 0px;
 }
 
-/*main {
-    margin: auto;
-    position: relative;
-    width: 1920px;
-    height: 4895px;
-    padding: 0;
-    background: #F9F9F9;
+p, h1, h2, h3, body {
+
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin: 0;
 }
-*/
-.first-screen {
+li {
+    display: blick;
+    text-align: center;
+}
+
+.text-block__text {
+    font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: #727272;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-top: 50px;
+}
+
+.text-block__title {
+    text-align: center;
+    font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	color: #000000;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.button {
+    padding: 18px 40px;
+    background: #34547A;
+    border: 0px;
+}
+.button__text {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.1em
+}
+
+.form_button {
+    margin: 0px auto;
+}
+.first-screen{
     width: 100%;
-    padding: 50px 0px 95px 0px;
+    max-width: 1150px;
+    margin: 0px auto;
+}
+.first-screen-box {
+    width: 100%;
+    padding: 57px 0px 146px 0px;
     height: 100%;
-    min-height: 650px;
     background: #EEEFF1;
-
+    box-sizing: border-box;
 }
 .header {
-    justify-content: space-evenly;
+    justify-content: space-between;
     display: flex;
-    flex-wrap: wrap;
 }
-.computer {
+.first-screen__computer {
     width: 357px;
     height: 233.7px;
-    margin-top: 75px;
     background: url('img/Frame.svg');
+    align-self: center;
+    margin-left: 85px;
 
 }
 
-.first_screen_content {
-    margin-left: 130px;
-    height: 100% + 100px;
+.first-screen__info {
+    width: 45%;
+    justify-content: flex-end;
 }
-.first_screen_box {
+.first-screen__content {
     display: flex;
-    flex-wrap: wrap;
-    margin: 100px auto;
-    justify-content: center;
-}
-.first-screen_menu {
-    display: flex;
-    width: 611px;
-    min-width: 300px;
-    height: 16px;
+    padding-top: 162px; 
     justify-content: space-between;
 }
 
-
-
-
+.first-screen__menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style-type: none;
 }
-
-.menu_elem {
-    height: 16px;
-   
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+.first-screen__menu > li {
+    margin-right: 42px;
+    list-style-type: none;
     letter-spacing: 0.1em;
-    
-    color: #000000;
+}
+.first-screen__menu > li:last-child {
+    margin-right: 0px;
+}
+.first-screen__menu > li:first-child {
+    color: #34547A;
 }
 
-.first-screen_title {
-    margin-bottom: 60px;
-    width: 541px;
-    height: 45px;
-
-    font-family: 'Roboto';
-    font-style: normal;
+.first-screen__info__title {
     font-weight: 500;
     font-size: 48px;
     line-height: 79px;
-
+    margin: 0px;
     color: #000000;
-}
-
-.first-screen_text {
-    margin-bottom: 60px;
-    width: 540px;
-    height: 67px;
-
-
-    /* p */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-
-    color: #727272;
-
-
-}
-.first-screen__button_text {
-
-    width: 143px;
-    height: 15px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-}
-
-.first-screen__button{
-    width: 225px;
-    height: 65px;
-    border: 0px;
-    background: #34547A;
 
 }
 
-.about-me {
+.first-screen__info__text {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.about-me-box {
+    padding: 119px 0px 100px 0px;
+}
+.text-block {
     display: block;
-    width: 540px;
-    height: 147px;
-    margin: 100px auto;
-}
-
-.about-me_title {
-
-    margin: 0 auto;
-    width: 403px;
-    height: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
+    width: 100%;
+    max-width: 540px;
+    margin: 0px auto;
+    box-sizing: border-box;
     text-align: center;
-    color: #000000;
-}
-.about-me_text {
-
-    width: 540px;
-    height: 67px;
-    margin-top: 50px;
-    /* p */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-
-    color: #727272;
-
 }
 
 
+
+.numbers-box {
+    padding: 100px 0px;
+    background: #34547A;
+}
 .numbers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
-    height: 100%;
-    padding: 75px 200px 75px 200px;
+    margin: 0px auto;
+    max-width: 1150px;
     box-sizing: border-box;
     background: #34547A;
 }
-
-.number_elem {
-    display: flex;
-}
-.number_elem2 {
-    display: flex;
-}
-
-p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #FFFFFF;
-    margin-left: 20px;
-}
-
-.video {
-
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 1000px;
-    background: #EEEFF1;
-
-}
-
-.video_title {
-    width: 100%;
-    height: 30px;
-    margin: 100px auto 50px auto;
-
-    
-    /* h2 */
-    
+.numbers__elem__title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-    
-    color: #000000;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 20px;
 }
-.video_text {
-    margin:10px auto;
-    width: 540px;
-
-
-    /* p */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-
-    color: #727272;
-
+.numbers__elem__text {
+    color: #FFFFFF;
+    margin: 10px 0px 0px 20px;
 }
-.video_img {
-    margin: 55px auto 100px auto;
+.numbers__elem {
     display: flex;
-    /* width: 90%; */
+    justify-content: center;
+}
+.numbers__elem2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.video {
+    background: #EEEFF1;
+    padding: 100px 0px 100px 0px;
+
+}
+
+
+
+.video__img {
+    margin: 57px auto 0px auto;
+    display: flex;
     background-image: url('img/Rectangle 5.png');
     background-size: cover;
-    width: 1110px;
+    max-width: 1110px;
     height: 600px;
+
 }
 
 
-.video_play_button{
+.video__play-button{
     margin: auto;
     position: relative;
 }
+.skills-box {
+    padding: 102px 0px 101px 0px;
+}
 .skills {
-    margin: 100px auto;
-    width: 100%;
+    box-sizing: border-box;
     max-width: 1150px;
-    height: 100%;
+    width: 100%;
+    margin: 0px auto;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
@@ -266,34 +221,27 @@ p {
     width: 100%;
     
 }
-.my_skills_elem {
+.skills__info__elem {
     display: flex;
     background: #C4C4C4;
     margin-top: 20px;
     margin-bottom: 30px;
     height: 4px;
 }
-.my_skills_elem_done {
+.skills__info__elem-done {
     display: flex;
     background: #34547A;
     height: 4px;
     width: 1px;
     flex-basis:  75%;
 }
-.my_skills {
+.skills__info {
     width: 445px;
-    height: 100%;
     margin: auto;
     margin-left: 0px;
 }
-.my_skills_title {
-    
-    width: 403px;
-    height: 30px;
-
-
-    /* h2 */
-
+.skills__info__title {
+    padding-bottom: 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -303,14 +251,7 @@ p {
     color: #000000;
 }
 
-.my_skills_text {
-    width: 128px;
-    height: 15px;
-    left: 387px;
-    top: 1593px;
-
-    /* p */
-
+.skills__info__text{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -320,96 +261,15 @@ p {
     color: #727272;
 
 }
-
-/*
-.projects {
-
-    width: 100%;
-    height: 100%;
-    min-height: 960px;
-
-    display: flex;
-    flex-wrap: wrap;
+.form-box {
+    background: #EEEFF1;
 }
-
-.projects_elem {
-    width: 25%;
-    height: auto;
-    min-width: 400px;
-    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));    
-}
-
-.project_shadow{
-    width: 100%;
-    height: 100%;
-    size: cover;
-
-}
-
-.project_shadow:hover {
-    opacity: 0.2;
-    background: url('img/view.svg') no-repeat center;
-}
-
-
-<div class="projects">
-            <div class="projects_elem"><img src='img/Rectangle 7.7.png' class="project_shadow"></div>
-            <div class="projects_elem"><img src='img/Rectangle 7.png' class="project_shadow"></div>
-            <div class="projects_elem"><img src='img/Rectangle 7.7.png' class="project_shadow"></div>
-            <div class="projects_elem"><img src='img/Rectangle 7.png' class="project_shadow"></div>
-            <div class="projects_elem"><img src='img/Rectangle 7.png' class="project_shadow"></div>
-            <div class="projects_elem"><img src='img/Rectangle 7.7.png' class="project_shadow"></div>
-            <div class="projects_elem"><img src='img/Rectangle 7.png' class="project_shadow"></div>
-            <div class="projects_elem"><img src='img/Rectangle 7.7.png' class="project_shadow"></div>
-        </div>
-
-*/
 .form {
-    display: block;
+    max-width: 1150px;
     width: 100%;
-    height: 762px;
-    border-width: 2px;
-    background: #EEEFF1;;
-
-}
-
-.form_title{
-
-    width: 406px;
-    height: 30px;
-    margin: 100px auto 0px auto;
-
-    /* h2 */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-
-    color: #000000;
-
-
-}
-
-.form_text {
-    margin: 50px auto 65px auto;
-
-    width: 540px;
-    height: 67px;
-
-
-    /* p */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-
-    color: #727272;
+    background: #EEEFF1;
+    padding: 100px 0px;
+    margin: 0px auto;
 
 
 }
@@ -424,15 +284,17 @@ p {
     background: #34547A;
 
 }
-.form_block{
+.form__block{
     display: flex;
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
+    padding: 65px 0px 70px 0px;
     flex-wrap: wrap;
-    margin: 0px auto 50px auto;
+    margin: 0px auto;
     justify-content: space-between;
 
 }
-.input_text {
+.form__block__input_text {
     width: 45%;
     border-width: 0px;
     height: 50px;
@@ -446,7 +308,7 @@ p {
     background: #FFFFFF;
 }
 
-.input_text2 {
+.form__block__input_text2 {
     width: 100%;
     min-width: 342px;
     height: 50px;
@@ -463,59 +325,37 @@ p {
 }
 
 
-.block_text {
-    width: 74px;
-    height: 15px;
-    left: 710px;
-    top: 4311px;
-
-    /* inputs */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 23px;
-
-    color: #5F5D5D;
-
+.footer-box{
+    background: #34547A;
+    width: 100%;
 }
-.main-footer {
+.footer {
     display: flex;
-    margin: auto;
+    margin: 0px auto;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    min-height: 151px;
-
+    max-width: 1150px;
+    padding: 50px 0px;
     background: #34547A;
 }
 
 
-.footer_text {
+.footer__text {
     margin: auto 0px;
+    padding: ;
 }
-.footer_name {
-    
-    width: 130px;
-    height: 19px;
-    left: 406px;
-    top: 4794px;
-            
-            /* h3 */
-            
+.footer__name {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
-            
+    margin-bottom: 20px;     
     color: #FFFFFF;  
 }
 
-.footer_text_content {
-    width: 193px;
-    height: 12px;
+.footer__text__content {
 
     font-family: 'Roboto';
     font-style: normal;
@@ -535,64 +375,68 @@ p {
     margin: 0px 10px;
 }
 
-
-
+.project__elem__shadow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background:  url('img/view.svg') center no-repeat;
+	background-color: #34547acc;
+	opacity: 0;
+}
+.project__elem__shadow:hover {
+	opacity: 1;
+}
 .projects {
-    display: grid;
-    width: 100%;
-    justify-items: stretch;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    flex-wrap: wrap;
+}
+.project__elem__column {
+    display: flex;
+    width: 50%;
+}
+.project__elem{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	position: relative
 }
 
-.project_elem1 {
-    background: url('img/Rectangle 7.7.png');
-    background-size: cover;
-}
-.project_elem2 {
-    background: url('img/Rectangle 7.png');
-    background-size: cover;
-}
-.elem_shadow{
-    width: 100%;
-    height: 100%;
+.project__elem > img {
+	width: 100%;
+	height: 100%;
 }
 
-.elem_shadow:hover {
-    width: 100%;
-    display: block;
-    height: 100%;
-    background: url('img/view.svg') no-repeat center;
-    background-color: #34547acc;
-    opacity: 0.7;
-    /*background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), url('img/view.svg') no-repeat center;*/
-}
 
 @media only screen and (max-device-width: 1280px){
+    .first-screen-box {
+        padding: 0px;
+        box-sizing: border-box;
+    }
     .first-screen {
-        padding-top: 0px;
+        padding: 22px 20px 0px 20px;
+        background: #EEEFF1;
+        box-sizing: border-box;
     }
-    .header {
-        justify-content: start;
-        padding: 20px;
-    }
-    .first-screen_menu {
+    
+    .first-screen__menu {
         display: none;
     }
 
-    .computer {
+    .first-screen__computer {
         width: 298px;
         height: 195px;
-        margin-top: 0px;
+        margin-left: 0px;
+        margin: 0px auto;
         background: url('img/iPhone/Frame.svg');
 
     }
-    .first_screen_box {
-
-    }
-    .first-screen_text {
-        margin-bottom: 60px;
-        width: 90%;
-
+  
+    .first-screen__info__text {
+        width: 100%;
+        padding: 44px 7px;
+        box-sizing: border-box;
         text-align: center;
         font-family: 'Roboto';
         font-style: normal;
@@ -600,110 +444,84 @@ p {
         font-size: 16px;
         line-height: 120%;
         color: #727272;
+        max-width: 540px;
+        margin: 0px auto;
     }
 
-    .first-screen_title {
-        margin: 60px auto;
-        width: 90%;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 36px;
+    .first-screen__info__title {
+        font-size: 34px;
+        text-align: center;
         line-height: 100%;
-        text-align: center;
-        color: #000000;
     }
-    .first_screen_content {
-        margin-left: 0px;
-        height: 100% + 100px;
-    }
-    .first-screen__button{
-        display: block;
-        margin: 10px auto;
-    }
-    .about-me_title {
+    .first-screen__info {
         width: 100%;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 38px;
-        text-align: center;
+        padding: 50px 0px 95px 0px;
     }
-
-    .about-me {
+    .first-screen__content {
+        padding-top: 67px;
+        flex-wrap: wrap;
+    }
+    .button {
         display: block;
-        width: 100%;
+        margin: 0px auto;
     }
 
-    .about-me_text {
-        width: 90%;
-        margin: 50px 20px;
 
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
+    .about-me-box {
+        padding: 91px 26px 82px 26px;
+    }
+    .text-block__text {
+        line-height: 120%;
+        padding-top: 34px ;
+    }
+    .numbers-box {
+        padding: 30px 0px;
     }
     .numbers {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         height: 100%;
-        padding: 75px 20px;
+        padding: 0px;
         box-sizing: border-box;
         background: #34547A;
         justify-content: space-between;
         column-gap:  auto;
     }
-    
-    .number_elem {
-        display: flex;
-        max-width: 140px;
-        box-sizing: border-box;
-        justify-self: center;
+    .numbers__elem {
+        padding: 45px 15px 45px 0px;
     }
-    .number_elem2 {
-        display: flex;
-        max-width: 140px;
-        box-sizing: border-box;
-        justify-self: center;
+    .numbers__elem2 {
+        padding: 45px 0px 45px 15px;
     }
-    
-    .my_skills {
+    .skills-box {
+        padding: 0px;
+    }
+    .skills__info {
         width: 100%;
         margin: 0px auto;
     }
-    .my_skills_title {
+    .skills__info__title {
         width: 100%;
-
         margin: auto;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 38px;
         text-align: center;
-        color: #000000;
+        padding: 98px 0px 42px 0px;
     }
     .skills_img {
-        width: 90%;
+        width: 100%;
         margin: 0px auto;
     }
     .skills_img > img {
         width: 100%;
     }
     .skills {
-        padding: 20px;
+        padding: 82px 18px 73px 18px;
         box-sizing: border-box;
         flex-wrap: wrap-reverse;
     }
 
     .video {
-        min-height: 0px;
+        padding: 93px 18px 91px 18px;
     }
     .video_title {
         width: 100%;
@@ -718,113 +536,95 @@ p {
         line-height: 120%;
     }
 
-    .video_img{
+    .video__img{
         width: 320px;
         height: 185px;
     }
-    .video_play_button{
+    .video__play-button{
         width: 75px;
         height: 75px;
     }
 
     .projects {
-        display: grid;
+        padding: 34px 0px;
+    }
+    .project__elem {
+        width: 50%;
+		height: 100%;
+    }
+    .reverse {
+        flex-direction: row-reverse;
+    }
+    .project__elem__column {
         width: 100%;
-        justify-items: stretch;
-        grid-template-columns: repeat(4,1fr);
     }
-    .project_elem1 {
-        min-width: 25%;
-        min-height: 50%;
+
+    .form {
+        padding: 91px 17px 100px 17px;
+        box-sizing: border-box;
     }
-    .project_elem2{
-        min-width: 25%;
-        min-height: calc(width * 1);
+    .form__block {
+        padding: 48px 0px;
     }
-    .form_title {
-        width: 100%;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 38px;
-    }
-    .form_text{
-        width: 90%;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 120%;
-        margin: 30px auto;
-    }
-    .input_text {
+
+    .form__block__input_text{
         width: 100%;
         height: 50px;
     }
-    .input_text2 {
+    .form__block__input_text2 {
         width: 100%;
         height: 175px;
         min-width: 320px;
-        margin-bottom: 50px;
+
     }
-    .footer_name{
-        margin: 20px auto;
+    .footer__name{
+        text-align: center;
     }
     .vk_logo >img {
         width:44px;
+        padding-top: 20px;
     }
     .form_block {
         width: 320px;
     }
 }
+
+
+
 /*
-.projects {
-
-    width: 1920px;
-    height: 960px;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project_elem1 {
-    width: 480px;
-    height: 480px;
-    background: url('img/Rectangle 7.7.png');
-    
-}
-.project_elem2 {
-    width: 480px;
-    height: 480px;
-    background: url('img/Rectangle 7.png');
-    
-}
-.elem_shadow{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.elem_shadow:hover {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url('img/view.svg') no-repeat center;
-    background-color: #40a4c2;
-    opacity: 0.7;
-    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8)), url('img/view.svg') no-repeat center;
-}
-
-        <div class="projects">
-            <div class="project_elem1"><div class="elem_shadow"></div></div>
-            <div class="project_elem2"><div class="elem_shadow"></div></div>
-            <div class="project_elem1"><div class="elem_shadow"></div></div>
-            <div class="project_elem2"><div class="elem_shadow"></div></div>
-            <div class="project_elem2"><div class="elem_shadow"></div></div>
-            <div class="project_elem1"><div class="elem_shadow"></div></div>
-            <div class="project_elem2"><div class="elem_shadow"></div></div>
-            <div class="project_elem1"><div class="elem_shadow"></div></div>
+<div class="projects">
+            <div class="project__elem">
+                <img src="img/Rectangle 7.png">
+                <div class='project__elem__shadow'></div>
+            </div>
+            <div class="project__elem">
+                <img src="img/Rectangle 7.7.png">
+                <div class='project__elem__shadow'></div>
+            </div>
+            <div class="project__elem">
+                <img src="img/Rectangle 7.png">
+                <div class='project__elem__shadow'></div>
+            </div>
+            <div class="project__elem">
+                <img src="img/Rectangle 7.7.png">
+                <div class='project__elem__shadow'></div>
+            </div>
+            <div class="project__elem">
+                <img src="img/Rectangle 7.7.png">
+                <div class='project__elem__shadow'></div>
+            </div>
+            <div class="project__elem">
+                <img src="img/Rectangle 7.png">
+                <div class='project__elem__shadow'></div>
+            </div>
+            <div class="project__elem">
+                <img src="img/Rectangle 7.7.png">
+                <div class='project__elem__shadow'></div>
+            </div>
+            <div class="project__elem">
+                <img src="img/Rectangle 7.png">
+                <div class='project__elem__shadow'></div>
+            </div>
         </div>
-
+    
 */

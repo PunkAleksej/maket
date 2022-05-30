@@ -1,35 +1,56 @@
 body {
-	margin: 0px;
+	margin: 0 px;
 }
 
-.foto {
- display: flex;
- flex-wrap: wrap;
- 
-}
-.foto_card{
-	width: 25%;
-	height: 50%;
-}
-.foto_card:hover {
-	opacity: 0.5;
+.screen-box {
+	padding: 57px 405px 146px 402px;
 }
 
-.foto_card > img {
+.screen {
+	width: 100%;
+}
+.screen-logo {
+	width: 96px;
+	height: 60px;
+}
+.screen-logo  > img{
 	width: 100%;
 	height: 100%;
 }
-.foto_card > img:hover {
-	background:  url('img/view.svg') center no-repeat;
-	opacity: 0.1;
+.screen-footer {
+	display: flex;
+	justify-content: space-between;
+}
+.screen-menu {
+	display: flex;
+	margin-top: 22px;
 }
 
-.view {
-	margin: auto;
+
+.roboto400 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.1em;
+	color: #000000;
 }
-@media only screen and (max-device-width: 1280px){
-	.foto_card{
-		width: 50%;
-		height: 25%;
-	}
+.roboto500 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 79px;
+	color: #000000;
+}
+
+
+
+.screen-menu-element {
+	margin: 0px 21px
+}
+
+.screen-content-computer {
+	max-width: 357px;
 }
