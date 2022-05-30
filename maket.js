@@ -42,8 +42,48 @@ function showUserInfo (user) {
     return user.email
     
 }
+let x = document.div
+
+console.log(x)
+// прятать блок при нажатии кнопки
+//document.getElementById('id').onclick = function() {
+//      document.getElementById('target').hidden = true;
+//}
+
+//<input type="button" onclick="this.hidden=true" value="Нажми, чтобы спрятать">
+querySelector   
+querySelectorAll   
+getElementById  
+getElementsByName   
+getElementsByTagName   
+getElementsByClassName
+
+closest
+
+Element – это базовый класс для DOM-элементов. 
+Он обеспечивает навигацию на уровне элементов: 
+nextElementSibling, children и методы поиска: getElementsByTagName, querySelector.
 
 
-console.log(showUserInfo(user1))
-console.log(showUserInfo(user2))
-console.log(showUserInfo(user3))
+innerHTML  Внутреннее HTML-содержимое узла-элемента. Можно изменять
+
+hidden Когда значение установлено в true, делает то же самое, что и CSS display:none.
+
+elem.hasAttribute(name) – проверяет наличие атрибута.
+elem.getAttribute(name) – получает значение атрибута.
+elem.setAttribute(name, value) – устанавливает значение атрибута.
+elem.removeAttribute(name) – удаляет атрибут.
+elem.attributes – это коллекция всех атрибутов.
+
+
+document.createElement(tag) – создаёт элемент с заданным тегом,
+elem.cloneNode(deep) – клонирует элемент, если deep==true, то со всеми дочерними элементами.
+
+background-color  => elem.style.backgroundColor
+z-index           => elem.style.zIndex
+border-left-width => elem.style.borderLeftWidth
+
+
+let x = getComputedStyle(element) // свойства css
+console.log(x.marginTop)  // 5px
+console.log(x.color)  // rgb(255, 0, 0)
