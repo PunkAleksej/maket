@@ -9,29 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="screen-box">
-    <div class="screen">
-        
-        <div class="screen-footer">
-            <div class="screen-logo">
-                <img src="img/WD.svg">
+    <div class="container">
+        <header>
+            <button class="header__button active">4 Tasks</button>
+            <img src="completed-task.png">
+            <button class="header__button completed">0 Task</button>
+        </header>
+        <div class="list">
+            <div class="list__task">
+                <button class="list_task_completed"></button>
+                <div class="list__task__text">#1 Do awesome design</div>
+                <button class="list__task__delete"></button>
             </div>
-            <div class="screen-menu">
-                <div class="screen-menu-element roboto400">ГЛАВНАЯ</div>
-                <div class="screen-menu-element roboto400">ОБ АВТОРЕ</div>
-                <div class="screen-menu-element roboto400">РАБОТЫ</div>
-                <div class="screen-menu-element roboto400">ПРОЦЕСС</div>
-                <div class="screen-menu-element roboto400">КОНТАКТЫ</div>
-            </div> 
-        </div>
-        
-        <div class="screen-content">
-            <div class="creen-content-computer">
-                <img src="img/Frame.svg">
+            <div class="list__task">
+                <button class="list_task_completed"></button>
+                <div class="list__task__text">#2 Make an algoritm</div>
+                <button class="list__task__delete"></button>
             </div>
-        </div>
+            <div class="list__task">
+                <button class="list_task_completed"></button>
+                <div class="list__task__text">#3 Don't cry</div>
+                <button class="list__task__delete"></button>
+            </div>
+            <div class="list__task">
+                <button class="list_task_completed"></button>
+                <div class="list__task__text">4# Move it on react</div>
+                <button class="list__task__delete"></button>
+            </div>
 
+            <div class="list__task">
+                <input class="list__task__text new" placeholder="Write new task...">
+                <button class="list_task_completed add">Add Task</button>
+            </div>
+        </div>
     </div>
-  </div> 
+
+
+
 </body>
 </html>

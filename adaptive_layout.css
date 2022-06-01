@@ -1,56 +1,74 @@
-body {
-	margin: 0 px;
-}
-
-.screen-box {
-	padding: 57px 405px 146px 402px;
-}
-
-.screen {
+.container {
+	max-width: 1000px;
 	width: 100%;
+	margin: 0px auto;
+	border: 1px solid #83b4eb;
+	border-radius: 10px;
+	padding: 25px;
+	box-sizing: border-box;
 }
-.screen-logo {
-	width: 96px;
-	height: 60px;
-}
-.screen-logo  > img{
+
+
+header {
 	width: 100%;
-	height: 100%;
-}
-.screen-footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	padding: 50px 0px;
 }
-.screen-menu {
+
+.header__button {
+	background-color: #83b4eb;
+	border: 2px solid blue;
+	border-radius: 10px;
+	font-size: 40px;
+	text-align: center;
+	width: 35%;
+}
+
+.list {
+	width: 100%;
+	padding: 50px;
+	border: 1px solid #83b4eb;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+
+.list__task {
+	border: 1px solid #83b4eb;
+	border-radius: 10px;
 	display: flex;
-	margin-top: 22px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 25px;
 }
 
+.list_task_completed {
+	background-color: #42e3bd;
+	background-image: url('check-mark.png');
+	border-radius: 10px;
+	min-width: 96px;
+	min-height: 68px;
 
-.roboto400 {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 26px;
-	letter-spacing: 0.1em;
-	color: #000000;
 }
-.roboto500 {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 48px;
-	line-height: 79px;
-	color: #000000;
+.list__task__text {
+	width: 100%;
+	border: 1px solid #83b4eb;
+	border-radius: 10px;
+	font-size: 40px;
+	padding-left: 5px;
+}
+.list__task__delete {
+	background-color: #eb3b64;
+	background-image: url('trash.png');
+	border-radius: 10px;
+	min-width: 96px;
+	min-height: 68px;
+
 }
 
-
-
-.screen-menu-element {
-	margin: 0px 21px
-}
-
-.screen-content-computer {
-	max-width: 357px;
+.add {
+	min-width: 240px;
+	font-size: 40px;
+	background-image: none;
 }
